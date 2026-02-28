@@ -1,10 +1,5 @@
+#include "allocator.hpp"
 #include <cstdlib>
-
-struct LinearAllocator {
-  void *start;
-  size_t size;
-  size_t offset;
-};
 
 LinearAllocator createAllocator(size_t size) {
   LinearAllocator alloc;
