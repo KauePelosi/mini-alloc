@@ -1,9 +1,10 @@
 #include "allocator.hpp"
+#include <cstddef>
 #include <cstdlib>
 
 LinearAllocator createAllocator(size_t size) {
   LinearAllocator alloc;
-  alloc.start = std::malloc(size);
+  alloc.start = static_cast<std::byte *>(std::malloc(size));
   alloc.size = size;
   alloc.offset = 0;
   return alloc;
@@ -13,7 +14,7 @@ void *linearAllocate(LinearAllocator &alloc, size_t size) {
   if (alloc.offset + size > alloc.size) {
     return nullptr;
   }
-  void *ptr = static_cast<char *>(alloc.start) + alloc.offset;
+  std::byte *ptr = alloc.start + alloc.offset;
   alloc.offset += size;
 
   return ptr;
