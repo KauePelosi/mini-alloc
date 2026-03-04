@@ -19,5 +19,6 @@ int main() {
   std::cout << "b: " << b << " = " << *b << "\n";
   std::cout << "c: " << c << " = " << *c << "\n";
 
+  destroyAllocator(alloc);
   return 0;
 }

@@ -10,3 +10,4 @@ struct LinearAllocator {
 
 LinearAllocator createAllocator(size_t size);
 void *linearAllocate(LinearAllocator &alloc, size_t size);
+void destroyAllocator(LinearAllocator &alloc);

@@ -19,3 +19,10 @@ void *linearAllocate(LinearAllocator &alloc, size_t size) {
 
   return ptr;
 }
+
+void destroyAllocator(LinearAllocator &alloc) {
+  std::free(alloc.start);
+  alloc.start = nullptr;
+  alloc.size = 0;
+  alloc.offset = 0;
+}
