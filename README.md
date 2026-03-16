@@ -13,14 +13,18 @@ To implement a series of memory allocators, each building upon the last, to expl
 This project is divided into four main phases. Each phase has a clear objective and a set of tasks. You should aim to complete one phase before moving to the next.
 
 ```
-mini-malloc/
-├── src/
-│   ├── allocator.cpp
-│   ├── allocator.hpp
-│   └── main.cpp
-├── tests/
-├── CMakeLists.txt
-└── README.md
+mini-alloc
+├─ src
+│  ├─ allocator.cpp
+│  ├─ allocator.hpp
+│
+├─ tests
+│  ├─ benchmark_config.hpp
+│  ├─ benchmark_config.cpp
+│  ├─ benchmark_malloc.cpp
+│  ├─ benchmark_linear.cpp
+│
+└─ benchmark_main.cpp
 ```
 
 ---
