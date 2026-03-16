@@ -1,4 +1,4 @@
-#include "include/benchmark_config.hpp"
+#include "../../config/benchmark_config.hpp"
 #include <chrono>
 
 void benchmark() {
