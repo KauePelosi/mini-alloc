@@ -21,5 +21,5 @@ void benchmark_linear() {
   auto duration =
       std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
 
-  std::cout << "Linear Allocator: " << duration.count() << "ms\n";
+  std::cout << "linear allocator: " << duration.count() << "ms\n";
 }

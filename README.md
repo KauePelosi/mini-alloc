@@ -49,8 +49,8 @@ mini-alloc/
 
 **Tasks:**
 
-- [ ] **1.1: Reserve a Fixed-Size Buffer:** In your `Allocator` class, create a constructor that allocates a large, fixed-size block of memory (e.g., 1MB) using `new std::byte[SIZE]`. This is your "heap."
-- [ ] **1.2: Implement `alloc(size_t size)`:**
+- [X] **1.1: Reserve a Fixed-Size Buffer:** In your `Allocator` class, create a constructor that allocates a large, fixed-size block of memory (e.g., 1MB) using `new std::byte[SIZE]`. This is your "heap."
+- [X] **1.2: Implement `alloc(size_t size)`:**
     -   Create a pointer or offset that tracks the current position within your buffer.
     -   The `alloc` function should check if there is enough space remaining.
     -   If so, it returns a pointer to the current offset and moves the offset forward by `size`.
