@@ -13,18 +13,27 @@ To implement a series of memory allocators, each building upon the last, to expl
 This project is divided into four main phases. Each phase has a clear objective and a set of tasks. You should aim to complete one phase before moving to the next.
 
 ```
-mini-alloc
-├─ src
-│  ├─ allocator.cpp
-│  ├─ allocator.hpp
-│
-├─ tests
-│  ├─ benchmark_config.hpp
-│  ├─ benchmark_config.cpp
-│  ├─ benchmark_malloc.cpp
-│  ├─ benchmark_linear.cpp
-│
-└─ benchmark_main.cpp
+mini-alloc/
+├── allocator/
+│   ├── allocator.cpp
+│   └── allocator.hpp
+├── bin/
+├── config/
+│   ├── benchmark_config.cpp
+│   └── benchmark_config.hpp
+├── tests/
+│   ├── linear/
+│   │   ├── benchmark_linear.cpp
+│   │   └── benchmark_linear.hpp
+│   ├── malloc/
+│   │   ├── benchmark_malloc.cpp
+│   │   └── benchmark_malloc.hpp
+│   └── stack/
+│       ├── benchmark_stack.cpp
+│       └── benchmark_stack.hpp
+├── LICENSE
+├── main.cpp
+├── README.md
 ```
 
 ---
